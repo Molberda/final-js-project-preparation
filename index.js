@@ -10,10 +10,9 @@ async function api() {
 
 api();
 
-function showUserPosts(id) {
-  localStorage.setItem('id', id)
+function showUserPosts(localId) {
+  localStorage.setItem('id', localId)
   window.location.href = `${window.location.origin}/user.html`
-  console.log(id)
 }
 
 
